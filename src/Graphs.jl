@@ -62,6 +62,9 @@ module Graphs
         
         # connected_components
         connected_components, strongly_connected_components,
+
+        # cliques
+        maximal_cliques,
         
         # dijkstra_spath
         DijkstraStates, create_dijkstra_states, AbstractDijkstraVisitor, 
@@ -102,6 +105,7 @@ module Graphs
     include("prim_mst.jl")
     include("kruskal_mst.jl")
     include("floyd_warshall.jl")
+    include("cliques.jl")
 
     include("dot.jl")
 
